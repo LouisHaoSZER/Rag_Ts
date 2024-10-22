@@ -5,4 +5,7 @@ export default antfu(
   {
     type: 'lib',
   },
+  {
+    ignores: ['src/trains/MdFiles/**/*.md'],
+  },
 )

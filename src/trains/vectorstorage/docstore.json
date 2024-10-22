@@ -1,0 +1,36 @@
+[
+  [
+    [
+      "d64d33c1-ec13-4f28-a5c6-cbbe7779b5db",
+      {
+        "pageContent": "起因：\n考虑到未来俱乐部招新规模的扩大，会使得集训、比赛的考勤难度增加，以及第三方签到小程序的不足之处，故需要开发一款俱乐部专用微信小程序，便于俱乐部内部使用。\n项目核心功能简介：\n  根据使用场景，小程序需要满足以下功能：\n用户端：\n    1.快速打卡————快速查看需要打卡的任务，并完成打卡\n    2.签到记录————查看个人签到记录\n    3.个人中心————用于账号的设置、关于等\n管理端\n  1.任务管理————管理所有打卡任务，并可以新建任务\n  必要时可以做一个简单的管理员鉴权\n产品原型图：\n[图片]\nUI设计暂无\n\n技术栈\n前端：Uniapp+TDesignUI\n后端：SpringBoot\n\n开发注意事项：\n1.使用GitHub作为代码托管平台\n2.定期汇报开发进度（会考虑到平时课程任务繁多而减少任务量）\n3.有良好的Git记录\n4.出现问题大群及时反馈，不可以拖延进度\n\n开发人员\n前端\n廖键锋\n胡桂新\n后端\n张润凯\n马骏腾\n\n小程序功能参考链接\nhttps://juejin.cn/post/6844903473528455182#heading-9",
+        "metadata": {
+          "id": 0
+        }
+      }
+    ],
+    [
+      "728d3407-cfba-43e5-9dec-673a6cb9d838",
+      {
+        "pageContent": "<h1 align=\"center\" style=\"margin: 30px 0 30px; font-weight: bold;\">YF 后台管理系统</h1>\n<p align=\"center\">\n\t<a href=\"https://gitee.com/fateyifei/yf/stargazers\"><img src=\"https://gitee.com/fateyifei/yf/badge/star.svg?theme=dark\"></a>\n\t<a href=\"https://gitee.com/fateyifei/yf\"><img src=\"https://img.shields.io/badge/YF-v1.0.0-brightgreen.svg\"></a>\n\t<a href=\"https://gitee.com/fateyifei/yf/blob/master/LICENSE\"><img src=\"https://img.shields.io/github/license/mashape/apistatus.svg\"></a>\n</p>\n<p align=\"center\" >\n<a href=\"http://110.41.173.220/yf-vue-admin\" target=\"_blank\">👀 在线预览</a>\n | <a href=\"#\" target=\"_blank\">📖 项目文档</a>\n</p>\n\n## 项目简介\n\n- 项目采用多种流行技术 , 其中技术栈包含但不限于\n    - SpringBoot3 、SpringSecurity6 、SpringAi、SpringEmail 、SpringCache 、MybatisPlus...\n    - Vue3、TypeScript、ElementPlus、VueRouter、Pinia...\n    - Mysql、Redis、Minio、Caffeine...\n    - TensorFlow、JustAuth、ffmpeg、test4j、sensitive-word、vosk...\n    - Alipay、OSS、COS、OBS....\n\n- 项目为学习性后台管理系统 , 有诸多流行技术 , 持续更新 , 免费远程答疑 ,\n  可根据基础版 [yf-vue3-admin-base](https://gitee.com/fateyifei/yf-vue3-admin-base) 修改为任意系统。\n\n## 项目特色\n\n- 简单易学 : 在项目关注度高时会在 **bilibili 录制项目讲解视频**\n- 授权登录 : 采用JWT颁发授权信息，支持刷新Token，二次封装JustAuth并且通过简单工厂模式+模版方法模式结合SpringSecurity进行多种登录方式。\n- 安全可用 : Redis多规则限流、Redis分布式防重复提交、AOP日志处理、数据脱敏、脏词过滤...\n- 基础设施完善 : 用户、第三方授权、角色、菜单、字典、部门、日志等完善的权限系统功能。\n- 文件模块 : 支持多种平台文件上传MinIo、OSS、COS、OBS....\n- AI助手 : 使用SpringAi对接ChatGPT、ollama...\n- 聊天室 : 支持集群环境下websocket通讯\n- 丰富工具库 : TreeUtil(一行代码构建树形结构) 、TensorFlow 模型访问 、ip解析具体地址...\n- 丰富有趣功能 : OCR、ffmpeg、脏词过滤、字幕识别...\n\n## 项目展示\n\n| 地址      | 链接                                                                            |\n|---------|-------------------------------------------------------------------------------|\n| 网站      | <a href=\"http://110.41.173.220/yf-vue-admin\" target=\"_blank\">yf-vue-admin</a> |\n| Gitee源码 | <a href=\"https://gitee.com/fateyifei/yf\" target=\"_blank\">YF</a>               |\n\n### PC端\n\n![PC端项目截图](https://foruda.gitee.com/images/1722956633903082210/719fc801_9026884.png)\n\n### 移动端\n\n![移动端项目截图](https://foruda.gitee.com/images/1722956662136702771/e725e761_9026884.png)\n\n## 项目运行\n\n### 项目环境\n\n| 环境    | 版本  |\n|-------|-----|\n| Java  | 17+ |\n| Maven | 3+  |\n| Node  | 18+ |\n| Redis | 5+  |\n| Mysql | 5+  |\n\n### 运行命令\n\n```shell\n## 将项目下载到本地\ngit clone https://gitee.com/fateyifei/yf.git\n```\n\n### yf-vue-admin ( 前端服务 )\n\n- 前提 : 需要有node环境,系统中安装过yarn\n\n```shell\n## 已经安装 yarn 则可不执行\nnpm install yarn -g\n## 切换目录\ncd yf/yf-vue-admin\n## 安装依赖\nyarn install\n## 启动项目\nyarn run dev\n\n## 接下来会自动打开项目到网页 , 如果未部署后端服务请设置 .env.production 中 VITE_APP_API_URL = http://110.41.173.220/api\n```\n\n### yf-boot-admin ( 后端服务 )\n\n- 前提 : 已经配置好 java17、 maven 、redis 、mysql，并且mysql数据库已经导入\n- 注意 : 导入数据库后默认管理员账户 => 用户名 : admin 密码 : 12345678\n\n```shell\n## 切换目录\ncd yf/yf-boot-admin\n\n## 打包\nmvn clean package -DskipTests\n\n## 在yf/yf-boot-admin/yf-admin 下找到 jar 包并运行\njava -jar target/yf-admin-<version>.jar > xx.log 2>&1 &\n\n```\n\n## 项目部署\n\n```shell\n## 前端项目 ( .env.production 可修改部署配置 )\nyarn run build\n## 后端项目 ( application-prod 可修改部署配置信息  )\nmvn clean package -DskipTests\n## nginx 配置\n### 项目存储在 ( nginx/html/{.env.production中VITE_APP_PUBLIC_PATH}下 , 可以直接修改 dist 文件夹名 )\nserver {\n    # 监听端口80\n    listen 80;\n    server_name localhost;\n    \n    # SPA项目 -> yf-vue-admin\n    location /yf-vue-admin/ {\n        root /www/server",
+        "metadata": {
+          "id": 1
+        }
+      }
+    ],
+    [
+      "e8ec4ebe-b3b0-467a-98d8-0e59220e315a",
+      {
+        "pageContent": "ginx/html;\n        index index.html;\n        try_files $uri $uri/ /yf-vue-admin/index.html;\n    }\n    \n    # 后台服务 -> yf-boot-admin\n    location /api {\n          # 后端服务器地址(您的后端地址)\n          proxy_pass ????;  \n          \n          # 设置转发给后端的请求头\n          # 使用客户端请求的主机名作为后端请求的Host头\n          proxy_set_header Host $host;  \n          # 将客户端真实IP地址传递给后端\n          proxy_set_header X-Real-IP $remote_addr;  \n          # 将客户端和代理服务器链的IP地址传递给后端\n          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n          # 传递使用的协议（HTTP或HTTPS）\n          proxy_set_header X-Forwarded-Proto $scheme;  \n          # 传递请求的主机名\n          proxy_set_header X-Forwarded-Host $host;  \n          # 传递请求的服务器端口\n          proxy_set_header X-Forwarded-Port $server_port;  \n          \n          # WebSocket 连接\n          # 使用HTTP/1.1协议以支持WebSocket\n          proxy_http_version 1.1;  \n          # 处理WebSocket协议升级请求\n          proxy_set_header Upgrade $http_upgrade;  \n          # 处理WebSocket协议升级请求\n          proxy_set_header Connection \"Upgrade\";  \n          \n          # SSE 连接\n          # 禁用代理缓冲以支持Server-Sent Events (SSE)\n          proxy_buffering off;  \n          # 请求速率限制\n          # 设置请求速率限制\n          #limit_req zone=one burst=20 nodelay;  \n    }\n}\n### 后端项目任意位置运行 , 请记住端口以及地址 ( 需要服务器开发地址访问权限 ， 后续通过 nginx 进行代理 )\njava -jar target/yf-admin-<version>.jar > ??.log 2>&1 &\n\n```\n\n## 项目注意事项\n\n### 提交规范\n\n| 前缀           | 描述                        |\n|--------------|---------------------------|\n| feat: ✨      | 新功能                       |\n| fix: 🐛      | bug修复                     |\n| docs: 📚     | 仅文档更改                     |\n| style: 🌈    | 不影响代码含义的更改（空白、格式设置、缺失分号等） |\n| refactor: ♻️ | 既不修复bug也不添加特性的代码更改        |\n| perf: 🚀     | 改进性能的代码更改                 |\n| test: 🧪     | 添加缺少的测试或更正现有测试            |\n| chore: 🔨    | 对构建过程或辅助工具和库（如文档）的更改      |\n| revert: ↩️   | 回滚 commit                 |\n\n### 登录/注册功能\n\n- 后台管理系统一般不会有注册，但是项目为一人一号不方便在线演示，所以您可以通过邮箱、第三方平台进行登录体验\n\n### 部分功能只有后端接口\n\n- 由于家中突发情况，项目先行开源，部分功能仅有后端实现，前端页面并未编写\n\n## 交流群 🚀\n\n欢迎 start , 欢迎交流技术 , 如果有任何不懂的地方可以联系我 , 可以无偿帮您解决 , 相当于大家互相交流学习\n\nQQ群 ： 957226269\n\n微信 （加好友后邀请进群）：\n\n<img src=\"https://foruda.gitee.com/images/1714351435556602409/7b1d097c_9026884.jpeg\" width=\"235\" height=\"220\" alt=\"微信号\">",
+        "metadata": {
+          "id": 2
+        }
+      }
+    ]
+  ],
+  {
+    "0": "d64d33c1-ec13-4f28-a5c6-cbbe7779b5db",
+    "1": "728d3407-cfba-43e5-9dec-673a6cb9d838",
+    "2": "e8ec4ebe-b3b0-467a-98d8-0e59220e315a"
+  }
+]
